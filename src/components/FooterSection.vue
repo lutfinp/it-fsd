@@ -19,27 +19,27 @@ const columns = [
 
 <template>
   <footer class="footer">
-    <div class="container footer-inner">
+    <!-- <div class="container footer-inner">
       <div class="footer-brand">
         <a href="#beranda" class="brand">
           <span class="brand-mark">&lt;/&gt;</span>
           <span>IT&nbsp;<strong>FSD</strong></span>
         </a>
-        <p>
+        <!-- <p>
           Frontend Software Development — departemen terbaik. Karena kode kami
           berbicara, dan tim kami yang membuatnya hidup.
-        </p>
-      </div>
+        </p> -->
+      <!-- </div> -->
 
-      <div v-for="col in columns" :key="col.title" class="footer-col">
+      <!-- <div v-for="col in columns" :key="col.title" class="footer-col">
         <h4>{{ col.title }}</h4>
         <a v-for="l in col.links" :key="l" :href="'#' + col.title.toLowerCase()"> {{ l }}</a>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
 
     <div class="footer-bottom">
       <div class="container">
-        <p>© {{ year }} IT FSD · Best Department. Dibuat dengan 💜 oleh Frontend Team.</p>
+        <p>© {{ year }} IT FSD · Best Department. Dibuat dengan 💜.</p>
       </div>
     </div>
   </footer>

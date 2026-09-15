@@ -10,7 +10,7 @@ function onSubmit() {
 }
 </script>
 
-<template>
+<!-- <template>
   <section id="join" class="cta">
     <div class="container">
       <div class="cta-box">
@@ -31,7 +31,7 @@ function onSubmit() {
       </div>
     </div>
   </section>
-</template>
+</template> -->
 
 <style scoped>
 .cta {

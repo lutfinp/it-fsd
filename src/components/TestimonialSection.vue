@@ -2,23 +2,23 @@
 const testimonials = [
   {
     text: 'Bekerja di IT FSD terasa seperti tempat di mana "sulit" selalu dijawab dengan "ayo coba". Standar tinggi, tapi dukungannya juga setinggi itu.',
-    name: 'Bima Arya',
-    role: 'Frontend Engineer (1 tahun)',
-    initial: 'B',
+    name: 'Haikal Muhammad',
+    role: 'Backend Developer (3 tahun)',
+    initial: 'H',
     color: '#6366f1',
   },
   {
     text: 'Lingkungan paling suportif yang pernah aku temui. Dari junior sampai lead, semua mau berbagi. Benar-benar departemen terbaik perusahaan.',
-    name: 'Cinta Lavinia',
-    role: 'UI Engineer (2 tahun)',
-    initial: 'C',
+    name: 'Lutfi Nofal',
+    role: 'Frontend Developer (1 tahun)',
+    initial: 'L',
     color: '#22d3ee',
   },
   {
     text: 'Aku masuk tanpa pengalaman produk besar, sekarang memegang sistem yang dipakai ribuan orang sehari-hari. Growth-nya gila cepat.',
-    name: 'Eko Prabowo',
-    role: 'Software Engineer (3 tahun)',
-    initial: 'E',
+    name: 'Adrianata P T',
+    role: 'Mobile Developer (3 tahun)',
+    initial: 'A',
     color: '#f59e0b',
   },
 ]

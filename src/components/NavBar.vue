@@ -37,7 +37,7 @@ onUnmounted(() => {
         <a v-for="l in links" :key="l.href" :href="l.href" @click="menuOpen = false">
           {{ l.label }}
         </a>
-        <a href="#join" class="btn btn-small" @click="menuOpen = false">Gabung Sekarang</a>
+        <!-- <a href="#join" class="btn btn-small" @click="menuOpen = false">Gabung Sekarang</a> -->
       </nav>
 
       <button class="hamburger" @click="menuOpen = !menuOpen" aria-label="Menu">

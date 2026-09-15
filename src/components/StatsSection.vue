@@ -1,9 +1,21 @@
 <script setup>
 const stats = [
-  { value: '40+', label: 'Engineer & Designers' },
-  { value: '50+', label: 'Produk & Fitur Dirilis' },
-  { value: '98%', label: 'Kepuasan Anggota' },
-  { value: '100%', label: 'Bersemangat Setiap Pagi' },
+  {
+    value: '01',
+    label: 'Kebutuhan Bisnis',
+  },
+  {
+    value: '02',
+    label: 'Solusi Digital',
+  },
+  {
+    value: '03',
+    label: 'Improvement Berkelanjutan',
+  },
+  {
+    value: '04',
+    label: 'Dampak Nyata',
+  },
 ]
 </script>
 
@@ -11,11 +23,11 @@ const stats = [
   <section id="tentang" class="stats">
     <div class="container">
       <div class="text-center">
-        <span class="eyebrow">Kenapa IT FSD?</span>
-        <h2 class="section-title">Angka yang Berbicara</h2>
+        <span class="eyebrow">Tentang IT FSD</span>
+        <h2 class="section-title">Mengubah Kebutuhan Menjadi Solusi</h2>
         <p class="section-desc">
-          Prestasi adalah bukti. Berikut capaian yang menjadikan IT FSD
-          departemen terbaik di antara yang terbaik.
+          Seiring berkembangnya kebutuhan bisnis, berbagai sistem yang digunakan
+          oleh perusahaan perlu terus dikembangkan dan dioptimalkan.
         </p>
       </div>
 
@@ -24,6 +36,22 @@ const stats = [
           <div class="stat-value grad">{{ s.value }}</div>
           <div class="stat-label">{{ s.label }}</div>
         </div>
+      </div>
+
+      <div class="about-content">
+        <p>
+          IT FSD melihat adanya peluang untuk meningkatkan proses melalui
+          automasi, integrasi, pengembangan fitur, dan penyesuaian sistem agar
+          semakin sesuai dengan kebutuhan operasional.
+        </p>
+
+        <p>
+          Sistem seperti ELITE, LMS, HRMS, HRIS, dan berbagai aplikasi internal
+          memiliki peran penting dalam mendukung aktivitas perusahaan. Karena itu,
+          IT FSD tidak hanya berfokus pada pengembangan fitur baru, tetapi juga
+          menjaga stabilitas, melakukan improvement, dan memastikan sistem dapat
+          terus berkembang mengikuti kebutuhan bisnis.
+        </p>
       </div>
     </div>
   </section>

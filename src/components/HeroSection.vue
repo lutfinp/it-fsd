@@ -1,5 +1,5 @@
 <script setup>
-const features = ['Source Code', 'DevOps 101', 'Design Excellence']
+const features = ['Development', 'Automation', 'System Improvement']
 </script>
 
 <template>
@@ -10,17 +10,17 @@ const features = ['Source Code', 'DevOps 101', 'Design Excellence']
         <h1>
           Department <span class="grad">IT FSD</span>
           <br />
-          Tempat Kode Bertemu Karya Terbaik
+          Bertumbuh, Berinovasi, Memberikan Dampak Nyata
         </h1>
         <p>
-          Frontend Software Development — tim yang tidak hanya menulis kode, tetapi
-          membangun pengalaman, budaya, dan masa depan digital. Karena kami percaya,
-          <em>departemen terbaik dimulai dari orang-orang terbaik.</em>
+          IT FSD tidak hanya mengembangkan sistem, tetapi menghadirkan solusi digital
+          yang mendukung kebutuhan bisnis, meningkatkan efisiensi, dan memberikan
+          dampak nyata bagi berbagai Department di perusahaan.
         </p>
 
         <div class="hero-actions">
-          <a href="#join" class="btn">Gabung Tim Kami</a>
-          <a href="#tentang" class="btn-ghost">Kenali Kami ⇣</a>
+          <a href="#tentang" class="btn">Kenali Kami</a>
+          <a href="#keunggulan" class="btn-ghost">Lihat Improvement ⇣</a>
         </div>
 
         <div class="hero-tags">
@@ -38,14 +38,15 @@ const features = ['Source Code', 'DevOps 101', 'Design Excellence']
           </div>
           <pre class="window-body"><code><span class="k">const</span> <span class="v">team</span> = {</code>
 <code>  <span class="p">nama</span>: <span class="s">'IT FSD'</span>,</code>
-<code>  <span class="p">produk</span>: <span class="s">'Best-in-class'</span>,</code>
+<code>  <span class="p">fokus</span>: <span class="s">'Business Improvement'</span>,</code>
+<code>  <span class="p">solusi</span>: <span class="s">'Digital &amp; Terintegrasi'</span>,</code>
 <code>  <span class="p">budaya</span>: <span class="s">'Kolaboratif'</span>,</code>
-<code>  <span class="p">growth</span>: <span class="s">'Tanpa Batas'</span>,</code>
+<code>  <span class="p">dampak</span>: <span class="s">'Nyata &amp; Berkelanjutan'</span>,</code>
 <code>};</code>
 <code>&nbsp;</code>
-<code><span class="k">export</span> <span class="k">default</span> <span class="v">team</span><span class="p">;</span> <span class="c">// ✨ no bugs, just vibes</span></code></pre>
+<code><span class="k">export</span> <span class="k">default</span> <span class="v">team</span><span class="p">;</span> <span class="c">// ✨ improvement in every line</span></code></pre>
         </div>
-        <div class="window-badge">Best dept? <b>Obv.</b> ✦</div>
+        <div class="window-badge">Best dept? <b>Let's prove it.</b> ✦</div>
       </div>
     </div>
   </section>

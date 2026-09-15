@@ -54,7 +54,7 @@ const reasons = ['Kami selalu inisiatif duluan', 'Respon cepat di setiap sprint'
         </div>
 
         <!-- Countdown -->
-        <div class="countdown">
+        <!-- <div class="countdown">
           <div class="countdown-box">
             <span class="cd-num">{{ pad(timeLeft.d) }}</span>
             <span class="cd-label">Hari</span>
@@ -74,10 +74,10 @@ const reasons = ['Kami selalu inisiatif duluan', 'Respon cepat di setiap sprint'
             <span class="cd-num">{{ pad(timeLeft.s) }}</span>
             <span class="cd-label">Detik</span>
           </div>
-        </div>
+        </div> -->
 
         <!-- Progress voting -->
-        <div class="progress-wrap">
+        <!-- <div class="progress-wrap">
           <div class="progress-head">
             <span>{{ votes.toLocaleString('id-ID') }} suara terkumpul</span>
             <span>Target {{ goal.toLocaleString('id-ID') }}</span>
@@ -87,11 +87,11 @@ const reasons = ['Kami selalu inisiatif duluan', 'Respon cepat di setiap sprint'
               <span class="progress-tip">{{ progress }}%</span>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="vote-cta">
           <a href="#" class="btn btn-vote" @click.prevent="false">🗳️ Vote IT FSD Sekarang</a>
-          <a href="#join" class="btn-ghost">Ajukan Pertanyaan</a>
+          <!-- <a href="#join" class="btn-ghost">Ajukan Pertanyaan</a> -->
         </div>
 
         <!-- Alasan -->

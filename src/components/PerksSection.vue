@@ -1,34 +1,34 @@
 <script setup>
 const perks = [
   {
-    icon: '💜',
-    title: 'Budaya Kolaboratif',
-    desc: 'Code review yang membangun, knowledge sharing mingguan, dan tim yang selalu siap berdiri satu untuk lainnya.',
+    icon: '🎯',
+    title: 'End-to-End Solution',
+    desc: 'Memahami kebutuhan dari awal hingga implementasi, mulai dari requirement, development, testing, troubleshooting, sampai sistem dapat digunakan oleh user.',
   },
   {
-    icon: '☕',
-    title: 'Lingkungan Santai',
-    desc: 'Pekerjaan serius, suasana santai. Flexible hour, snack unlimited, dan teman diskusi istirahat yang seru.',
+    icon: '🔄',
+    title: 'Continuous Improvement',
+    desc: 'Terus mengevaluasi sistem dan proses yang berjalan untuk menemukan peluang automasi, integrasi, dan pengembangan yang lebih efektif.',
   },
   {
-    icon: '🌱',
-    title: 'Peluang Bertumbuh',
-    desc: 'Mentoring, workshop internal, dan exposure ke stack terbaru — karirmu berkembang secepat tim ini.',
+    icon: '💡',
+    title: 'Solusi Proaktif',
+    desc: 'Tidak hanya menjalankan requirement, tetapi memberikan alternatif dan masukan teknis ketika terdapat proses yang masih dapat dibuat lebih sederhana dan efektif.',
   },
   {
-    icon: '🛠️',
-    title: 'Teknologi Modern',
-    desc: 'Vue 3, TypeScript, dan tooling terbaik. Kerja dengan stack yang kamu banggakan, bukan yang menua.',
+    icon: '🤝',
+    title: 'Kolaborasi',
+    desc: 'Bekerja bersama IT PM, user, dan Department terkait melalui diskusi, testing, evaluasi, serta tindak lanjut sampai solusi berjalan sesuai kebutuhan.',
   },
   {
     icon: '🚀',
     title: 'Dampak Nyata',
-    desc: 'Karya kami dipakai ribuan pengguna setiap hari. Setiap baris kode memberi dampak yang terasa.',
+    desc: 'Improvement membantu mengurangi pekerjaan manual, meningkatkan konsistensi data, dan membuat proses operasional lebih terstruktur.',
   },
   {
-    icon: '🏆',
-    title: 'Pengakuan',
-    desc: 'Departemen terbaik 2025 & 2026. Membuktikan bahwa kerja keras berbanding lurus dengan penghargaan.',
+    icon: '♾️',
+    title: 'Berkelanjutan',
+    desc: 'Sistem tidak berhenti setelah implementasi, tetapi terus dipelihara dan dikembangkan mengikuti perubahan kebutuhan perusahaan.',
   },
 ]
 </script>
@@ -38,9 +38,10 @@ const perks = [
     <div class="container">
       <div class="text-center">
         <span class="eyebrow">Keunggulan Kami</span>
-        <h2 class="section-title">Bukan Sekadar Departemen, Ini Rumah</h2>
+        <h2 class="section-title">Bukan Sekadar Development, Kami Memberikan Dampak</h2>
         <p class="section-desc">
-          Enam alasan mengapa orang-orang bangga menjadi bagian dari IT FSD.
+          Setiap improvement dimulai dari kebutuhan dan berakhir pada solusi
+          yang memberikan manfaat nyata.
         </p>
       </div>
 

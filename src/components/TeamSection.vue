@@ -1,23 +1,22 @@
 <script setup>
 const manager = {
-  name: 'Deni Saputra',
+  name: 'Efendi',
   role: 'Manager IT FSD',
-  stack: ['Vue 3', 'Architecture', 'Mentoring'],
+  stack: ['Vue 3', 'Frappe', 'Architecture', 'Mentoring'],
   grad: 'linear-gradient(135deg,#6366f1,#22d3ee)',
 }
 
 const supervisors = [
-  { name: 'Budi Santoso', role: 'Supervisor IT FSD', grad: 'linear-gradient(135deg,#6366f1,#8b5cf6)' },
+  { name: 'Erland', role: 'Supervisor', grad: 'linear-gradient(135deg,#6366f1,#8b5cf6)' },
 ]
 
 const staff = [
-  { name: 'Agung Saputra', role: 'Frontend Engineer', grad: 'linear-gradient(135deg,#6366f1,#22d3ee)' },
-  { name: 'Bella Ramadhani', role: 'UI Engineer', grad: 'linear-gradient(135deg,#ec4899,#8b5cf6)' },
-  { name: 'Chandra Wijaya', role: 'Frontend Engineer', grad: 'linear-gradient(135deg,#10b981,#f59e0b)' },
-  { name: 'Dewi Kartika', role: 'QA Engineer', grad: 'linear-gradient(135deg,#f59e0b,#22d3ee)' },
-  { name: 'Edi Prasetyo', role: 'Frontend Engineer', grad: 'linear-gradient(135deg,#8b5cf6,#ec4899)' },
-  { name: 'Fitri Handayani', role: 'UX Designer', grad: 'linear-gradient(135deg,#22d3ee,#ec4899)' },
-  { name: 'Gilang Ramadhan', role: 'Frontend Engineer', grad: 'linear-gradient(135deg,#ef4444,#f59e0b)' },
+  { name: 'Lutfi Nofal', role: 'Frontend Developer', grad: 'linear-gradient(135deg,#6366f1,#22d3ee)' },
+  { name: 'Andrianata', role: 'Frontend Developer', grad: 'linear-gradient(135deg,#ec4899,#8b5cf6)' },
+  { name: 'Rofi', role: 'Backend Developer', grad: 'linear-gradient(135deg,#10b981,#f59e0b)' },
+  { name: 'Atha Fajar', role: 'Backend Developer', grad: 'linear-gradient(135deg,#f59e0b,#22d3ee)' },
+  { name: 'Haikal', role: 'Backend Developer', grad: 'linear-gradient(135deg,#8b5cf6,#ec4899)' },
+  { name: 'Ian Hermawan', role: 'Backend Developer', grad: 'linear-gradient(135deg,#22d3ee,#ec4899)' },
 ]
 
 const initials = (name) =>
