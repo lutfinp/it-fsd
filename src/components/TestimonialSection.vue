@@ -16,7 +16,7 @@ const testimonials = [
   },
   {
     text: 'Aku masuk tanpa pengalaman produk besar, sekarang memegang sistem yang dipakai ribuan orang sehari-hari. Growth-nya gila cepat.',
-    name: 'Adrianata P T',
+    name: 'Andrianata P T',
     role: 'Mobile Developer (3 tahun)',
     initial: 'A',
     color: '#f59e0b',
