@@ -59,8 +59,8 @@ const features = ['Development', 'Automation', 'System Improvement']
   align-items: center;
   padding: 140px 0 80px;
   background:
-    radial-gradient(700px 380px at 85% 10%, rgba(34, 211, 238, 0.14), transparent 60%),
-    radial-gradient(700px 420px at 10% 90%, rgba(99, 102, 241, 0.16), transparent 60%);
+    radial-gradient(700px 380px at 85% 10%, rgba(52, 207, 235, 0.2), transparent 60%),
+    radial-gradient(700px 420px at 10% 90%, rgba(2, 132, 199, 0.2), transparent 60%);
 }
 
 .hero-inner {
@@ -109,8 +109,8 @@ const features = ['Development', 'Automation', 'System Improvement']
 }
 
 .btn-ghost:hover {
-  border-color: var(--accent);
-  background: rgba(34, 211, 238, 0.08);
+  border-color: var(--primary);
+  background: rgba(52, 207, 235, 0.1);
 }
 
 .hero-tags {
@@ -179,8 +179,8 @@ const features = ['Development', 'Automation', 'System Improvement']
   width: fit-content;
   padding: 10px 18px;
   border-radius: 999px;
-  background: rgba(52, 211, 153, 0.1);
-  border: 1px solid rgba(52, 211, 153, 0.3);
+  background: rgba(52, 207, 235, 0.12);
+  border: 1px solid rgba(52, 207, 235, 0.35);
   color: var(--text);
   font-size: 0.9rem;
   animation: float 6s ease-in-out infinite 1.5s;

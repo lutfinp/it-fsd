@@ -43,8 +43,8 @@ function onSubmit() {
   padding: 72px 40px;
   border-radius: 24px;
   background:
-    radial-gradient(500px 240px at 20% 0%, rgba(99, 102, 241, 0.22), transparent 60%),
-    radial-gradient(500px 240px at 80% 100%, rgba(34, 211, 238, 0.18), transparent 60%),
+    radial-gradient(500px 240px at 20% 0%, rgba(52, 207, 235, 0.22), transparent 60%),
+    radial-gradient(500px 240px at 80% 100%, rgba(0, 242, 254, 0.18), transparent 60%),
     var(--dark-soft);
   border: 1px solid var(--border);
 }
@@ -79,11 +79,12 @@ function onSubmit() {
   color: var(--text);
   font-size: 0.95rem;
   outline: none;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .cta-form input:focus {
   border-color: var(--primary);
+  box-shadow: 0 0 16px rgba(52, 207, 235, 0.25);
 }
 
 .cta-form input::placeholder {

@@ -4,7 +4,7 @@ const year = new Date().getFullYear()
 const columns = [
   {
     title: 'Departemen',
-    links: ['Beranda', 'Tentang', 'Keunggulan', 'Tim', 'Testimoni'],
+    links: ['Beranda', 'Galeri', 'Tentang', 'Keunggulan', 'Tim', 'Project', 'Testimoni', 'DANA Kaget'],
   },
   {
     title: 'Konten',
@@ -75,7 +75,7 @@ const columns = [
   height: 36px;
   border-radius: 10px;
   background: var(--gradient);
-  color: #fff;
+  color: #0b1020;
   font-weight: 800;
   font-family: 'Courier New', monospace;
 }
@@ -100,7 +100,7 @@ const columns = [
 }
 
 .footer-col a:hover {
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .footer-bottom {

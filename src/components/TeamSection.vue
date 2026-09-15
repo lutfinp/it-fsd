@@ -2,21 +2,21 @@
 const manager = {
   name: 'Efendi',
   role: 'Manager IT FSD',
-  stack: ['Vue 3', 'Frappe', 'Architecture', 'Mentoring'],
-  grad: 'linear-gradient(135deg,#6366f1,#22d3ee)',
+  grad: 'linear-gradient(135deg, #34cfeb, #00f2fe)',
 }
 
 const supervisors = [
-  { name: 'Erland', role: 'Supervisor', grad: 'linear-gradient(135deg,#6366f1,#8b5cf6)' },
+  { name: 'Erland', role: 'Supervisor', grad: 'linear-gradient(135deg, #34cfeb, #38bdf8)' },
 ]
 
 const staff = [
-  { name: 'Lutfi Nofal', role: 'Frontend Developer', grad: 'linear-gradient(135deg,#6366f1,#22d3ee)' },
-  { name: 'Andrianata', role: 'Frontend Developer', grad: 'linear-gradient(135deg,#ec4899,#8b5cf6)' },
-  { name: 'Rofi', role: 'Backend Developer', grad: 'linear-gradient(135deg,#10b981,#f59e0b)' },
-  { name: 'Atha Fajar', role: 'Backend Developer', grad: 'linear-gradient(135deg,#f59e0b,#22d3ee)' },
-  { name: 'Haikal', role: 'Backend Developer', grad: 'linear-gradient(135deg,#8b5cf6,#ec4899)' },
-  { name: 'Ian Hermawan', role: 'Backend Developer', grad: 'linear-gradient(135deg,#22d3ee,#ec4899)' },
+  { name: 'Lutfi', role: 'Frontend Developer', grad: 'linear-gradient(135deg, #34cfeb, #00e5ff)' },
+  { name: 'Andrianata', role: 'Mobile Developer', grad: 'linear-gradient(135deg, #ec4899, #34cfeb)' },
+  { name: 'Rofi', role: 'Backend Developer', grad: 'linear-gradient(135deg, #10b981, #34cfeb)' },
+  { name: 'Atha', role: 'Backend Developer', grad: 'linear-gradient(135deg, #f59e0b, #34cfeb)' },
+  { name: 'Haikal', role: 'Backend Developer', grad: 'linear-gradient(135deg, #38bdf8, #ec4899)' },
+  { name: 'Ian', role: 'Backend Developer', grad: 'linear-gradient(135deg, #34cfeb, #ec4899)' },
+  { name: 'Millata', role: 'Backend Developer', grad: 'linear-gradient(135deg, #ef4444, #34cfeb)' },
 ]
 
 const initials = (name) =>
@@ -28,7 +28,7 @@ const initials = (name) =>
 
 <template>
   <section id="tim" class="team">
-    <div class="container">
+    <div class="container team-container">
       <div class="text-center">
         <span class="eyebrow">Struktur Tim</span>
         <h2 class="section-title">Hierarki Departemen IT FSD</h2>
@@ -47,9 +47,6 @@ const initials = (name) =>
             <div class="avatar" :style="{ background: manager.grad }">{{ initials(manager.name) }}</div>
             <h3>{{ manager.name }}</h3>
             <p class="role">{{ manager.role }}</p>
-            <div class="stack">
-              <span v-for="s in manager.stack" :key="s">{{ s }}</span>
-            </div>
           </div>
         </div>
 
@@ -59,8 +56,8 @@ const initials = (name) =>
         </div>
 
         <!-- Level 2: Supervisors -->
-        <div class="level-scroll">
-          <div class="level">
+        <div class="level-wrapper">
+          <div class="level single-node">
             <div v-for="s in supervisors" :key="s.name" class="node">
               <div class="node-card card">
                 <div class="avatar sm" :style="{ background: s.grad }">{{ initials(s.name) }}</div>
@@ -77,8 +74,8 @@ const initials = (name) =>
         </div>
 
         <!-- Level 3: Staff -->
-        <div class="level-scroll">
-          <div class="level">
+        <div class="level-wrapper">
+          <div class="level staff-level">
             <div v-for="s in staff" :key="s.name" class="node">
               <div class="node-card card">
                 <div class="avatar sm" :style="{ background: s.grad }">{{ initials(s.name) }}</div>
@@ -99,14 +96,14 @@ const initials = (name) =>
   border-block: 1px solid var(--border);
 }
 
+.team-container {
+  width: min(1340px, 96%);
+}
+
 .hierarchy {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.field-group {
-  width: 100%;
 }
 
 /* ---- Level labels (Manager / Supervisor / Staff) ---- */
@@ -117,7 +114,7 @@ const initials = (name) =>
   text-transform: uppercase;
   color: var(--muted);
   border: 1px solid var(--border);
-  background: rgba(99, 102, 241, 0.08);
+  background: rgba(52, 207, 235, 0.08);
   padding: 6px 16px;
   border-radius: 999px;
   margin-bottom: 24px;
@@ -134,8 +131,8 @@ const initials = (name) =>
   margin-inline: auto;
   text-align: center;
   padding: 32px 24px;
-  border-color: rgba(99, 102, 241, 0.5);
-  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.25);
+  border-color: rgba(52, 207, 235, 0.5);
+  box-shadow: 0 20px 60px rgba(52, 207, 235, 0.25);
 }
 
 .avatar {
@@ -147,7 +144,7 @@ const initials = (name) =>
   place-items: center;
   font-size: 1.4rem;
   font-weight: 800;
-  color: #fff;
+  color: #0b1020;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
@@ -155,6 +152,7 @@ const initials = (name) =>
   width: 52px;
   height: 52px;
   font-size: 1rem;
+  margin: 0 auto 10px;
 }
 
 .manager-card h3 {
@@ -165,22 +163,7 @@ const initials = (name) =>
 .role {
   color: var(--muted);
   font-size: 0.85rem;
-  margin-bottom: 14px;
-}
-
-.stack {
-  display: flex;
-  gap: 6px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.stack span {
-  font-size: 0.72rem;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: rgba(34, 211, 238, 0.12);
-  color: var(--accent);
+  margin-bottom: 0;
 }
 
 /* ---- Connector between levels ---- */
@@ -190,8 +173,8 @@ const initials = (name) =>
   height: 64px;
   background: linear-gradient(
     to bottom,
-    rgba(99, 102, 241, 0.9),
-    rgba(34, 211, 238, 0.9)
+    rgba(52, 207, 235, 0.9),
+    rgba(0, 242, 254, 0.9)
   );
 }
 
@@ -211,43 +194,41 @@ const initials = (name) =>
   z-index: 1;
 }
 
-/* ---- Scrolling level row ---- */
-.level-scroll {
+/* ---- Level row wrapper ---- */
+.level-wrapper {
   width: 100%;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.level-scroll::-webkit-scrollbar {
-  display: none;
 }
 
 .level {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-  width: max-content;
-  min-width: 100%;
+  width: 100%;
   position: relative;
   padding-top: 48px;
   padding-bottom: 6px;
 }
 
-/* horizontal backbone */
-.level::before {
+/* horizontal backbone line */
+.staff-level::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 1%;
-  right: 1%;
+  left: 80px;
+  right: 80px;
   height: 2px;
-  background: linear-gradient(90deg, rgba(99, 102, 241, 0.9), rgba(34, 211, 238, 0.9));
+  background: linear-gradient(90deg, rgba(52, 207, 235, 0.9), rgba(0, 242, 254, 0.9));
+}
+
+.single-node::before {
+  display: none;
 }
 
 .node {
   position: relative;
-  flex: 0 0 auto;
-  width: 178px;
+  flex: 0 1 156px;
+  width: 156px;
 }
 
 /* vertical stem from backbone to card */
@@ -258,29 +239,45 @@ const initials = (name) =>
   left: 50%;
   width: 2px;
   height: 48px;
-  background: rgba(99, 102, 241, 0.8);
+  background: rgba(52, 207, 235, 0.8);
   transform: translateX(-50%);
 }
 
 .node-card {
   text-align: center;
-  padding: 24px 16px;
+  padding: 22px 12px;
 }
 
 .node-card h4 {
-  font-size: 0.98rem;
+  font-size: 0.95rem;
   margin-bottom: 4px;
 }
 
 .node-card .role {
   font-size: 0.78rem;
   margin-bottom: 0;
-  min-height: 2.4em;
+  min-height: 2.2em;
+}
+
+@media (max-width: 1024px) {
+  .staff-level::before {
+    display: none;
+  }
+  .node::before {
+    display: none;
+  }
+  .node {
+    flex: 1 1 150px;
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 600px) {
   .manager-card {
     width: 220px;
+  }
+  .node {
+    flex: 1 1 140px;
   }
 }
 </style>

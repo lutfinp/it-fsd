@@ -6,11 +6,14 @@ const menuOpen = ref(false)
 
 const links = [
   { label: 'Beranda', href: '#beranda' },
+  { label: 'Galeri', href: '#galeri' },
   { label: 'Tentang', href: '#tentang' },
   { label: 'Keunggulan', href: '#keunggulan' },
   { label: 'Tim', href: '#tim' },
+  { label: 'Project', href: '#project' },
   { label: 'Vote', href: '#vote' },
   { label: 'Testimoni', href: '#testimoni' },
+  { label: '🎁 DANA Kaget', href: '#danakaget' },
 ]
 
 const onScroll = () => {
@@ -87,7 +90,7 @@ onUnmounted(() => {
   height: 36px;
   border-radius: 10px;
   background: var(--gradient);
-  color: #fff;
+  color: #0b1020;
   font-weight: 800;
   font-family: 'Courier New', monospace;
   font-size: 0.85rem;
@@ -115,16 +118,16 @@ onUnmounted(() => {
   display: inline-block;
   padding: 14px 28px;
   border-radius: 999px;
-  font-weight: 700;
+  font-weight: 800;
   background: var(--gradient);
-  color: #fff !important;
-  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
+  color: #0b1020 !important;
+  box-shadow: 0 8px 24px rgba(52, 207, 235, 0.35);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.5);
+  box-shadow: 0 12px 28px rgba(52, 207, 235, 0.5);
 }
 
 .btn-small {

@@ -93,7 +93,7 @@ const testimonials = [
   border-radius: 50%;
   display: grid;
   place-items: center;
-  color: #fff;
+  color: #0b1020;
   font-weight: 800;
 }
 
