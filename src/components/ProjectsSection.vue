@@ -30,8 +30,8 @@ const projects = [
         metrics: "High Availability",
     },
     {
-        id: "elit-dpp",
-        name: "ELITE DPP",
+        id: "elit-ddp",
+        name: "ELITE DDP",
         category: "Enterprise (ELITE)",
         icon: "📊",
         badge: "Planning & Data",
