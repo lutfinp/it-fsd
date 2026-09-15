@@ -206,4 +206,25 @@ const features = ['Development', 'Automation', 'System Improvement']
     margin-inline: auto;
   }
 }
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+  .hero h1 {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-ghost,
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-right {
+    display: none;
+  }
+}
 </style>

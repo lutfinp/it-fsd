@@ -178,6 +178,7 @@ onUnmounted(() => {
     gap: 20px;
     padding: 28px 6%;
     background: rgba(11, 16, 32, 0.97);
+    backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
     transform: translateY(-12px);
     opacity: 0;
@@ -189,6 +190,15 @@ onUnmounted(() => {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 14px 0;
+  }
+  .brand {
+    font-size: 1rem;
   }
 }
 </style>

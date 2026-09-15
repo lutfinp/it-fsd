@@ -99,3 +99,36 @@ h2.section-title {
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ─── Global Responsive ─── */
+@media (max-width: 768px) {
+  .container {
+    width: min(1120px, 94%);
+  }
+
+  section {
+    padding: 64px 0;
+  }
+
+  h2.section-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .section-desc {
+    font-size: 0.95rem;
+  }
+
+  .mt-12 {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 52px 0;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

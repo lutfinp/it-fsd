@@ -11,9 +11,11 @@ import TestimonialSection from './components/TestimonialSection.vue'
 import CTASection from './components/CTASection.vue'
 import DanaKagetSection from './components/DanaKagetSection.vue'
 import FooterSection from './components/FooterSection.vue'
+import ParticleCanvas from './components/ParticleCanvas.vue'
 </script>
 
 <template>
+  <ParticleCanvas />
   <NavBar />
   <main>
     <HeroSection />

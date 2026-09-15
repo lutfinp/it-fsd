@@ -356,6 +356,31 @@ function copyLink() {
 
   .qr-card {
     margin: 0 auto;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dana-box {
+    padding: 28px 16px;
+  }
+
+  .dana-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .qr-image-wrap {
+    width: 180px;
+    height: 180px;
+  }
+
+  .dana-actions {
+    gap: 10px;
+  }
+
+  .btn-dana {
+    font-size: 0.9rem;
+    padding: 14px 20px;
   }
 }
 </style>

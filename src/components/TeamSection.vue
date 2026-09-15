@@ -274,10 +274,34 @@ const initials = (name) =>
 
 @media (max-width: 600px) {
   .manager-card {
-    width: 220px;
+    width: 200px;
+    padding: 24px 16px;
+  }
+  .avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 1.1rem;
   }
   .node {
-    flex: 1 1 140px;
+    flex: 1 1 130px;
+  }
+  .node-card {
+    padding: 16px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .level {
+    gap: 10px;
+  }
+  .node {
+    flex: 1 1 110px;
+  }
+  .node-card h4 {
+    font-size: 0.82rem;
+  }
+  .node-card .role {
+    font-size: 0.72rem;
   }
 }
 </style>

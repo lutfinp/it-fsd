@@ -500,5 +500,36 @@ import { computed } from "vue";
         height: 40px;
         font-size: 1.8rem;
     }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .lightbox-caption {
+        padding: 16px 20px;
+    }
+    .lightbox-caption h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .lightbox-overlay {
+        padding: 12px;
+        align-items: flex-end;
+    }
+    .lightbox-content {
+        border-radius: 20px 20px 0 0;
+        max-height: 88vh;
+    }
+    .lightbox-content img {
+        max-height: 55vh;
+    }
+    .lightbox-nav {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+    .lightbox-nav.prev { left: 8px; }
+    .lightbox-nav.next { right: 8px; }
 }
 </style>

@@ -1,7 +1,7 @@
 <script setup>
 const testimonials = [
   {
-    text: 'Bekerja di IT FSD terasa seperti tempat di mana "sulit" selalu dijawab dengan "ayo coba". Standar tinggi, tapi dukungannya juga setinggi itu.',
+    text: 'IT FSD menjadi tempat saya untuk belajar, berkembang, dan berproses. Keep solid, keep growing! 🚀',
     name: 'Haikal Muhammad',
     role: 'Backend Developer (3 tahun)',
     initial: 'H',

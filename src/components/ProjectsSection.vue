@@ -13,8 +13,8 @@ const projects = [
     },
     {
         id: "elit-gias",
-        name: "ELIT GIAS",
-        category: "Enterprise (ELIT)",
+        name: "ELITE GIAS",
+        category: "Enterprise (ELITE)",
         icon: "⚡",
         badge: "Core ERP",
         desc: "Platform Enterprise & Operasional terintegrasi untuk mengelola seluruh ekosistem bisnis GIAS secara akurat dan real-time.",
@@ -22,8 +22,8 @@ const projects = [
     },
     {
         id: "elit-mbc",
-        name: "ELIT MBC",
-        category: "Enterprise (ELIT)",
+        name: "ELITE MBC",
+        category: "Enterprise (ELITE)",
         icon: "🏬",
         badge: "Enterprise",
         desc: "Sistem operasional dan manajemen workflows bisnis unit MBC yang dirancang tinggi performa dan intuitif.",
@@ -31,8 +31,8 @@ const projects = [
     },
     {
         id: "elit-dpp",
-        name: "ELIT DPP",
-        category: "Enterprise (ELIT)",
+        name: "ELITE DPP",
+        category: "Enterprise (ELITE)",
         icon: "📊",
         badge: "Planning & Data",
         desc: "Sistem operasional dan manajemen workflows bisnis unit DDP yang dirancang tinggi performa dan intuitif.",
@@ -40,11 +40,11 @@ const projects = [
     },
     {
         id: "elit-suite",
-        name: "ELIT Systems (Lainnya)",
-        category: "Enterprise (ELIT)",
+        name: "ELITE Systems (Lainnya)",
+        category: "Enterprise (ELITE)",
         icon: "🚀",
         badge: "Ecosystem",
-        desc: "Ekosistem modul & micro-applications ELIT pendukung operasional cabang serta integrasi sistem bisnis internal.",
+        desc: "Ekosistem modul & micro-applications ELITE pendukung operasional cabang serta integrasi sistem bisnis internal.",
         metrics: "Multi-branch Support",
     },
     {
@@ -88,7 +88,7 @@ const projects = [
 const activeCategory = ref("Semua");
 const categories = [
     "Semua",
-    "Enterprise (ELIT)",
+    "Enterprise (ELITE)",
     "HR & Talent",
     "Support & Edu",
 ];
@@ -536,5 +536,61 @@ function closeProjectModal() {
 .fade-enter-from,
 .fade-leave-to {
     opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filters-wrap {
+        gap: 8px;
+        margin-bottom: 32px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    .modal-card {
+        padding: 24px 20px;
+        border-radius: 20px;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-meta {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .modal-header h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        gap: 16px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .modal-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-overlay {
+        padding: 12px;
+        align-items: flex-end;
+    }
+
+    .modal-card {
+        border-radius: 24px 24px 0 0;
+        width: 100%;
+        max-height: 85vh;
+    }
 }
 </style>
